@@ -20,18 +20,6 @@
 - 🛡️ **权限系统**：支持基于角色的权限控制系统
 - 🔑 **OpenAPI**：支持通过 API Key 访问 OpenAPI
 
-## 技术栈
-
-- **框架**: [Next.js](https://nextjs.org/) (App Router)
-- **平台**: [Cloudflare Pages](https://pages.cloudflare.com/)
-- **数据库**: [Cloudflare D1](https://developers.cloudflare.com/d1/) (SQLite)
-- **认证**: [NextAuth](https://authjs.dev/getting-started/installation?framework=Next.js) 配合 GitHub 登录
-- **样式**: [Tailwind CSS](https://tailwindcss.com/)
-- **UI 组件**: 基于 [Radix UI](https://www.radix-ui.com/) 的自定义组件
-- **邮件处理**: [Cloudflare Email Workers](https://developers.cloudflare.com/email-routing/)
-- **类型安全**: [TypeScript](https://www.typescriptlang.org/)
-- **ORM**: [Drizzle ORM](https://orm.drizzle.team/)
-
 ### Github Actions 部署
 
 本项目可使用 GitHub Actions 实现自动化部署。支持以下触发方式：
@@ -52,6 +40,7 @@
 
 ###### Cloudflare 配置(github绑定这些变量)
 - `CLOUDFLARE_API_TOKEN`: Cloudflare API Token
+  ![Token样本](public/icons/token.png)
 - `CLOUDFLARE_ACCOUNT_ID`: Cloudflare Account ID
 - `DATABASE_NAME`: D1 数据库名称
 - `DATABASE_ID`: D1 数据库 ID (可选, 如果不填, 则会自动通过 Cloudflare API 获取)
